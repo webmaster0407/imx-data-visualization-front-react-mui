@@ -1,7 +1,7 @@
 Front pages for imx-data-visualization
 Made with React.js/Material UI
 
-- First Page.
+- First Page(Drop day).
     - 1, how many unique wallets got the drop ?
     - 2. time taken to complete public minting of drop, and calcuate the mints/minutes
     - 3. % of successful wallets.
