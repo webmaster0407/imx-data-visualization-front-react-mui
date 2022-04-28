@@ -1,65 +1,10 @@
+Front pages for imx-data-visualization
+Made with React.js/Material UI
 
-
-```
-Naked Whale
-    ├── public
-    │   ├── apple-icon.png
-    │   ├── favicon.png
-    │   ├── index.html
-    │   ├── manifest.json
-    │   └── robots.txt
-    ├── src
-    │   ├── assets
-    │   │   ├── images
-    │   │   └── theme
-    │   │       ├── base
-    │   │       ├── components
-    │   │       ├── functions
-    │   │       ├── index.js
-    │   │       └── theme-rtl.js
-    │   ├── components
-    │   │   ├── SuiAlert
-    │   │   ├── SuiAvatar
-    │   │   ├── SuiBadge
-    │   │   ├── SuiBox
-    │   │   ├── SuiButton
-    │   │   ├── SuiInput
-    │   │   ├── SuiPagination
-    │   │   ├── SuiProgress
-    │   │   └── SuiTypography
-    │   ├── context
-    │   ├── examples
-    │   │   ├── Breadcrumbs
-    │   │   ├── Cards
-    │   │   ├── Charts
-    │   │   ├── Configurator
-    │   │   ├── Footer
-    │   │   ├── Icons
-    │   │   ├── Items
-    │   │   ├── LayoutContainers
-    │   │   ├── Lists
-    │   │   ├── Navbars
-    │   │   ├── Sidenav
-    │   │   ├── Tables
-    │   │   └── Timeline
-    │   ├── layouts
-    │   │   ├── authentication
-    │   │   ├── billing
-    │   │   ├── dashboard
-    │   │   ├── profile
-    │   │   ├── rtl
-    │   │   ├── tables
-    │   │   └── virtual-reality
-    │   ├── App.js
-    │   ├── index.js
-    │   └── routes.js
-    ├── .eslintrc.json
-    ├── .prettierrc.json
-    ├── CHANGELOG.md
-    ├── ISSUE_TEMPLATE.md
-    ├── jsconfig.json
-    ├── LICENSE.md
-    ├── package.json
-    └── README.md
-```
-
+- First Page.
+    - 1, how many unique wallets got the drop ?
+    - 2. time taken to complete public minting of drop, and calcuate the mints/minutes
+    - 3. % of successful wallets.
+    - 4. average number of nfts in successful wallets.
+    - 5. most successful wallet.
+    - 6. which wallet that got todays drop also got the previous drop ?
