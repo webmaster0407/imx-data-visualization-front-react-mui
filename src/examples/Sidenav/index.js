@@ -25,6 +25,8 @@ import Divider from "@mui/material/Divider";
 import Link from "@mui/material/Link";
 import Icon from "@mui/material/Icon";
 
+// import Grid from "@mui/material/Grid";
+
 // Soft UI Dashboard React components
 import SuiBox from "components/SuiBox";
 import SuiTypography from "components/SuiTypography";
@@ -38,6 +40,8 @@ import sidenavLogoLabel from "examples/Sidenav/styles/sidenav";
 
 // Soft UI Dashboard React context
 import { useSoftUIController, setMiniSidenav } from "context";
+
+import logo from "assets/images/naked whale.gif";
 
 function Sidenav({ color, brand, brandName, routes, ...rest }) {
   const [controller, dispatch] = useSoftUIController();
@@ -140,7 +144,7 @@ function Sidenav({ color, brand, brandName, routes, ...rest }) {
           </SuiTypography>
         </SuiBox>
         <SuiBox component={NavLink} to="/" display="flex" alignItems="center">
-          {brand && <SuiBox component="img" src={brand} alt="Naked Whale Logo" width="2rem" />}
+          {brand && <SuiBox component="img" src={logo} alt="Naked Whale Logo" width="30%" />}
           <SuiBox
             width={!brandName && "100%"}
             sx={(theme) => sidenavLogoLabel(theme, { miniSidenav })}

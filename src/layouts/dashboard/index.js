@@ -51,6 +51,30 @@ function Dashboard() {
           <Grid container spacing={3}>
             <Grid item xs={12} sm={6} xl={4}>
               <MiniStatisticsCard
+                title={{ text: "drop" }}
+                count="#"
+                percentage={{ color: "success", text: "#" }}
+                icon={{ color: "info", component: "paid" }}
+              />
+            </Grid>
+            <Grid item xs={12} sm={6} xl={4}>
+              <MiniStatisticsCard
+                title={{ text: "type" }}
+                count="#"
+                percentage={{ color: "success", text: "#" }}
+                icon={{ color: "info", component: "paid" }}
+              />
+            </Grid>
+            <Grid item xs={12} sm={6} xl={4}>
+              <MiniStatisticsCard
+                title={{ text: "date" }}
+                count="#"
+                percentage={{ color: "success", text: "#" }}
+                icon={{ color: "info", component: "paid" }}
+              />
+            </Grid>
+            <Grid item xs={12} sm={6} xl={4}>
+              <MiniStatisticsCard
                 title={{ text: "unique wallets" }}
                 count="15634"
                 percentage={{ color: "success", text: "1.88  tokens/wallet" }}

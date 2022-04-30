@@ -15,8 +15,8 @@ Coded by www.creative-tim.com
 
 const reportsBarChartData = {
   chart: {
-    labels: ["1-1", "1-2", "1-3", "2-1", "2-2", "2-3", "3-1", "3-2", "3-3"],
-    datasets: { label: "Sales", data: [490, 29500, 100, 380, 29500, 120, 380, 29500, 120] },
+    labels: ["1-1", "1-2", "2-1", "2-2", "3-1", "3-2"],
+    datasets: { label: "Tokens", data: [500, 29500, 500, 29500, 500, 29500] },
   },
   items: [
     {

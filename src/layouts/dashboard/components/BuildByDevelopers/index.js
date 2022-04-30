@@ -22,30 +22,52 @@ import Icon from "@mui/material/Icon";
 import SuiBox from "components/SuiBox";
 import SuiTypography from "components/SuiTypography";
 
+// import MiniStatisticsCard from "examples/Cards/StatisticsCards/MiniStatisticsCard";
+
 // Images
-import wavesWhite from "assets/images/shapes/waves-white.svg";
-import rocketWhite from "assets/images/illustrations/naked whale.gif";
 
 function BuildByDevelopers() {
   return (
     <Card>
       <SuiBox p={2}>
         <Grid container spacing={3}>
-          <Grid item xs={12} lg={6}>
+          <Grid item xs={12} lg={12}>
             <SuiBox display="flex" flexDirection="column" height="100%">
               <SuiBox pt={1} mb={0.5}>
                 <SuiTypography variant="body2" color="text" fontWeight="medium">
-                  Enjoy with VEVE
+                  VEVE Drops
                 </SuiTypography>
               </SuiBox>
-              <SuiTypography variant="h5" fontWeight="bold" gutterBottom>
-                Naked Whale
-              </SuiTypography>
-              <SuiBox mb={6}>
-                <SuiTypography variant="body2" color="text">
-                  We can see how the VEVE works and get better understand about the VEVE.
+              <Grid item xs={12} sm={12} xl={12}>
+                <SuiTypography variant="h5" fontWeight="bold" gutterBottom>
+                  Drop 1
                 </SuiTypography>
-              </SuiBox>
+                <SuiBox mb={6}>
+                  <SuiTypography variant="body2" color="text">
+                    Click to see more detail about the drop 1
+                  </SuiTypography>
+                </SuiBox>
+              </Grid>
+              <Grid item xs={12} sm={12} xl={12}>
+                <SuiTypography variant="h5" fontWeight="bold" gutterBottom>
+                  Drop 2
+                </SuiTypography>
+                <SuiBox mb={6}>
+                  <SuiTypography variant="body2" color="text">
+                    Click to see more detail about the drop 2
+                  </SuiTypography>
+                </SuiBox>
+              </Grid>
+              <Grid item xs={12} sm={12} xl={12}>
+                <SuiTypography variant="h5" fontWeight="bold" gutterBottom>
+                  Drop 3
+                </SuiTypography>
+                <SuiBox mb={6}>
+                  <SuiTypography variant="body2" color="text">
+                    Click to see more detail about the drop 3
+                  </SuiTypography>
+                </SuiBox>
+              </Grid>
               <SuiTypography
                 component="a"
                 href="#"
@@ -73,29 +95,6 @@ function BuildByDevelopers() {
                 Read More
                 <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
               </SuiTypography>
-            </SuiBox>
-          </Grid>
-          <Grid item xs={12} lg={5} sx={{ position: "relative", ml: "auto" }}>
-            <SuiBox
-              height="100%"
-              display="grid"
-              justifyContent="center"
-              alignItems="center"
-              bgColor="info"
-              borderRadius="lg"
-              variant="gradient"
-            >
-              <SuiBox
-                component="img"
-                src={wavesWhite}
-                alt="waves"
-                display="block"
-                position="absolute"
-                left={0}
-                width="100%"
-                height="100%"
-              />
-              <SuiBox component="img" src={rocketWhite} alt="rocket" width="100%" pt={3} />
             </SuiBox>
           </Grid>
         </Grid>

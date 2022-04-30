@@ -14,17 +14,17 @@ Coded by www.creative-tim.com
 */
 
 const gradientLineChartData = {
-  labels: ["1-1", "1-2", "1-3", "2-1", "2-2", "2-3", "3-1", "3-2", "3-3"],
+  labels: ["1-1", "1-2", "2-1", "2-2", "3-1", "3-2"],
   datasets: [
     {
       label: "Successful Wallets",
       color: "info",
-      data: [6, 554, 2, 0, 540, 16, 0, 560, 13],
+      data: [8, 554, 16, 540, 13, 560],
     },
     {
       label: "Average",
       color: "dark",
-      data: [187, 187, 187, 187, 187, 187, 187, 187, 187],
+      data: [281, 281, 281, 281, 281, 281],
     },
   ],
 };
