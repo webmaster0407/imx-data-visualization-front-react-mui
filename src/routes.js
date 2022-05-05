@@ -52,6 +52,7 @@ import CustomerSupport from "examples/Icons/CustomerSupport";
 import CreditCard from "examples/Icons/CreditCard";
 
 const routes = [
+  { type: "title", title: "veve Pages", key: "veve-pages" },
   {
     type: "collapse",
     name: "Drop Day",
@@ -64,17 +65,17 @@ const routes = [
   {
     type: "collapse",
     name: "Wallet Analysis",
-    key: "tables",
-    route: "/tables",
+    key: "wallet-analysis",
+    route: "/wallet-analysis",
     icon: <Office size="12px" />,
     component: <Tables />,
     noCollapse: true,
   },
   {
     type: "collapse",
-    name: "#",
-    key: "billing",
-    route: "/billing",
+    name: "Market",
+    key: "market",
+    route: "/market",
     icon: <CreditCard size="12px" />,
     component: <Billing />,
     noCollapse: true,
