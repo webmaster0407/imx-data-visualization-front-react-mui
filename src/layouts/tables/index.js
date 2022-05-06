@@ -119,6 +119,82 @@ function Tables() {
           </Card>
         </SuiBox>
         <SuiBox mb={3}>
+          <Card>
+            <SuiBox display="flex" justifyContent="space-between" alignItems="center" p={3}>
+              <SuiTypography variant="h6">Largest Wallets : Season 2</SuiTypography>
+            </SuiBox>
+            <SuiBox
+              sx={{
+                "& .MuiTableRow-root:not(:last-child)": {
+                  "& td": {
+                    borderBottom: ({ borders: { borderWidth, borderColor } }) =>
+                      `${borderWidth[1]} solid ${borderColor}`,
+                  },
+                },
+              }}
+            >
+              <Table columns={columns} rows={rows} />
+            </SuiBox>
+          </Card>
+        </SuiBox>
+        <SuiBox mb={3}>
+          <Card>
+            <SuiBox display="flex" justifyContent="space-between" alignItems="center" p={3}>
+              <SuiTypography variant="h6">Largest Wallets : Season 3</SuiTypography>
+            </SuiBox>
+            <SuiBox
+              sx={{
+                "& .MuiTableRow-root:not(:last-child)": {
+                  "& td": {
+                    borderBottom: ({ borders: { borderWidth, borderColor } }) =>
+                      `${borderWidth[1]} solid ${borderColor}`,
+                  },
+                },
+              }}
+            >
+              <Table columns={columns} rows={rows} />
+            </SuiBox>
+          </Card>
+        </SuiBox>
+        <SuiBox mb={3}>
+          <Card>
+            <SuiBox display="flex" justifyContent="space-between" alignItems="center" p={3}>
+              <SuiTypography variant="h6">Largest Wallets : Season 4</SuiTypography>
+            </SuiBox>
+            <SuiBox
+              sx={{
+                "& .MuiTableRow-root:not(:last-child)": {
+                  "& td": {
+                    borderBottom: ({ borders: { borderWidth, borderColor } }) =>
+                      `${borderWidth[1]} solid ${borderColor}`,
+                  },
+                },
+              }}
+            >
+              <Table columns={columns} rows={rows} />
+            </SuiBox>
+          </Card>
+        </SuiBox>
+        <SuiBox mb={3}>
+          <Card>
+            <SuiBox display="flex" justifyContent="space-between" alignItems="center" p={3}>
+              <SuiTypography variant="h6">Largest Wallets : Season 5</SuiTypography>
+            </SuiBox>
+            <SuiBox
+              sx={{
+                "& .MuiTableRow-root:not(:last-child)": {
+                  "& td": {
+                    borderBottom: ({ borders: { borderWidth, borderColor } }) =>
+                      `${borderWidth[1]} solid ${borderColor}`,
+                  },
+                },
+              }}
+            >
+              <Table columns={columns} rows={rows} />
+            </SuiBox>
+          </Card>
+        </SuiBox>
+        <SuiBox mb={3}>
           <Grid item xs={12} lg={12}>
             <GradientLineChart
               title="Wallets Against Time"
@@ -137,23 +213,101 @@ function Tables() {
             />
           </Grid>
         </SuiBox>
-        <Card>
-          <SuiBox display="flex" justifyContent="space-between" alignItems="center" p={3}>
-            <SuiTypography variant="h6">HODL Wallets</SuiTypography>
-          </SuiBox>
-          <SuiBox
-            sx={{
-              "& .MuiTableRow-root:not(:last-child)": {
-                "& td": {
-                  borderBottom: ({ borders: { borderWidth, borderColor } }) =>
-                    `${borderWidth[1]} solid ${borderColor}`,
+        <SuiBox mb={3}>
+          <Card>
+            <SuiBox display="flex" justifyContent="space-between" alignItems="center" p={3}>
+              <SuiTypography variant="h6">HODL Wallets - Season 1</SuiTypography>
+            </SuiBox>
+            <SuiBox
+              sx={{
+                "& .MuiTableRow-root:not(:last-child)": {
+                  "& td": {
+                    borderBottom: ({ borders: { borderWidth, borderColor } }) =>
+                      `${borderWidth[1]} solid ${borderColor}`,
+                  },
                 },
-              },
-            }}
-          >
-            <Table columns={prCols} rows={prRows} />
-          </SuiBox>
-        </Card>
+              }}
+            >
+              <Table columns={prCols} rows={prRows} />
+            </SuiBox>
+          </Card>
+        </SuiBox>
+        <SuiBox mb={3}>
+          <Card>
+            <SuiBox display="flex" justifyContent="space-between" alignItems="center" p={3}>
+              <SuiTypography variant="h6">HODL Wallets - Season 2</SuiTypography>
+            </SuiBox>
+            <SuiBox
+              sx={{
+                "& .MuiTableRow-root:not(:last-child)": {
+                  "& td": {
+                    borderBottom: ({ borders: { borderWidth, borderColor } }) =>
+                      `${borderWidth[1]} solid ${borderColor}`,
+                  },
+                },
+              }}
+            >
+              <Table columns={prCols} rows={prRows} />
+            </SuiBox>
+          </Card>
+        </SuiBox>
+        <SuiBox mb={3}>
+          <Card>
+            <SuiBox display="flex" justifyContent="space-between" alignItems="center" p={3}>
+              <SuiTypography variant="h6">HODL Wallets - Season 3</SuiTypography>
+            </SuiBox>
+            <SuiBox
+              sx={{
+                "& .MuiTableRow-root:not(:last-child)": {
+                  "& td": {
+                    borderBottom: ({ borders: { borderWidth, borderColor } }) =>
+                      `${borderWidth[1]} solid ${borderColor}`,
+                  },
+                },
+              }}
+            >
+              <Table columns={prCols} rows={prRows} />
+            </SuiBox>
+          </Card>
+        </SuiBox>
+        <SuiBox mb={3}>
+          <Card>
+            <SuiBox display="flex" justifyContent="space-between" alignItems="center" p={3}>
+              <SuiTypography variant="h6">HODL Wallets - Season 4</SuiTypography>
+            </SuiBox>
+            <SuiBox
+              sx={{
+                "& .MuiTableRow-root:not(:last-child)": {
+                  "& td": {
+                    borderBottom: ({ borders: { borderWidth, borderColor } }) =>
+                      `${borderWidth[1]} solid ${borderColor}`,
+                  },
+                },
+              }}
+            >
+              <Table columns={prCols} rows={prRows} />
+            </SuiBox>
+          </Card>
+        </SuiBox>
+        <SuiBox mb={3}>
+          <Card>
+            <SuiBox display="flex" justifyContent="space-between" alignItems="center" p={3}>
+              <SuiTypography variant="h6">HODL Wallets - Season 5</SuiTypography>
+            </SuiBox>
+            <SuiBox
+              sx={{
+                "& .MuiTableRow-root:not(:last-child)": {
+                  "& td": {
+                    borderBottom: ({ borders: { borderWidth, borderColor } }) =>
+                      `${borderWidth[1]} solid ${borderColor}`,
+                  },
+                },
+              }}
+            >
+              <Table columns={prCols} rows={prRows} />
+            </SuiBox>
+          </Card>
+        </SuiBox>
       </SuiBox>
       <Footer />
     </DashboardLayout>
