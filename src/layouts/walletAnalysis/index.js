@@ -31,21 +31,21 @@ import GradientLineChart from "examples/Charts/LineCharts/GradientLineChart";
 import ReportsBarChart from "examples/Charts/BarCharts/ReportsBarChart";
 
 // Data
-import largestWalletsData from "layouts/tables/data/largestWalletsData";
+import largestWalletsData from "layouts/walletAnalysis/data/largestWalletsData";
 // import projectsTableData from "layouts/tables/data/projectsTableData";
 
 // chart Data
 // import reportsBarChartData from "layouts/tables/chartdata/reportsBarChartData";
-import seasonWalletGradientChartData from "layouts/tables/chartdata/seasonWalletGradientChartData";
-import walletDistributionGradientLineChartData from "layouts/tables/chartdata/walletDistributionGradientLineChartData";
+import seasonWalletGradientChartData from "layouts/walletAnalysis/chartdata/seasonWalletGradientChartData";
+import walletDistributionGradientLineChartData from "layouts/walletAnalysis/chartdata/walletDistributionGradientLineChartData";
 
-import walletTimeData from "layouts/tables/walletTimeData/walletTimeData";
+import walletTimeData from "layouts/walletAnalysis/walletTimeData/walletTimeData";
 // import hodlWalletsData from "layouts/tables/hodlWalletsData/hodlWalletsData";
 
 // Soft UI Dashboard React base styles
 import typography from "assets/theme/base/typography";
 
-function Tables() {
+function WalletAnalysis() {
   const { columns, rows } = largestWalletsData;
   // const { columns: prCols, rows: prRows } = hodlWalletsData;
   const { chart, items } = seasonWalletGradientChartData;
@@ -270,4 +270,4 @@ function Tables() {
   );
 }
 
-export default Tables;
+export default WalletAnalysis;

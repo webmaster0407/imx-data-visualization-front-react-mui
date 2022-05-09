@@ -37,8 +37,8 @@ Coded by www.creative-tim.com
 
 // Soft UI Dashboard React layouts
 import Dashboard from "layouts/dashboard";
-import Tables from "layouts/tables";
-import Billing from "layouts/billing";
+import WalletAnalysis from "layouts/walletAnalysis";
+import Market from "layouts/market";
 import Profile from "layouts/profile";
 import SignIn from "layouts/authentication/sign-in";
 import SignUp from "layouts/authentication/sign-up";
@@ -68,7 +68,7 @@ const routes = [
     key: "wallet-analysis",
     route: "/wallet-analysis",
     icon: <Office size="12px" />,
-    component: <Tables />,
+    component: <WalletAnalysis />,
     noCollapse: true,
   },
   {
@@ -77,7 +77,7 @@ const routes = [
     key: "market",
     route: "/market",
     icon: <CreditCard size="12px" />,
-    component: <Billing />,
+    component: <Market />,
     noCollapse: true,
   },
   { type: "title", title: "Account Pages", key: "account-pages" },

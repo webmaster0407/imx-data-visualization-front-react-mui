@@ -23,7 +23,7 @@ import SuiBox from "components/SuiBox";
 import SuiTypography from "components/SuiTypography";
 
 // Billing page components
-import Transaction from "layouts/billing/components/Transaction";
+import Transaction from "layouts/market/components/Transaction";
 
 function Transactions() {
   return (
