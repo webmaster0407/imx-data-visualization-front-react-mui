@@ -14,13 +14,39 @@ Coded by www.creative-tim.com
 */
 
 const seasonWalletGradientChartData = {
-  labels: ["1", "2", "3", "4", "5"],
-  datasets: [
-    {
-      label: "Wallets in Season",
-      color: "info",
+  chart: {
+    labels: ["Season 1", "Season 2", "Season 3", "Season 4", "Season 5"],
+    datasets: {
+      label: "Wallets",
       data: [167854, 187879, 204730, 292309, 316483],
     },
+  },
+  items: [
+    {
+      icon: { color: "info", component: "extension" },
+      label: "Season 1",
+      progress: { content: "167K", percentage: 100 },
+    },
+    {
+      icon: { color: "info", component: "extension" },
+      label: "Season 2",
+      progress: { content: "187K", percentage: 100 },
+    },
+    {
+      icon: { color: "info", component: "extension" },
+      label: "Season 3",
+      progress: { content: "204K", percentage: 100 },
+    },
+    {
+      icon: { color: "info", component: "extension" },
+      label: "Season 4",
+      progress: { content: "292K ", percentage: 100 },
+    },
+    // {
+    //   icon: { color: "info", component: "extension" },
+    //   label: "Season 4",
+    //   progress: { content: "292309 ", percentage: 100 },
+    // },
   ],
 };
 

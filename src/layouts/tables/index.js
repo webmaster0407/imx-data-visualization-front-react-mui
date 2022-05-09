@@ -26,8 +26,9 @@ import SuiTypography from "components/SuiTypography";
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
 import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 import Footer from "examples/Footer";
-import Table from "examples/Tables/Table";
+import LaragestWalletTable from "examples/Custom/Page2/LaragestWalletTable";
 import GradientLineChart from "examples/Charts/LineCharts/GradientLineChart";
+import ReportsBarChart from "examples/Charts/BarCharts/ReportsBarChart";
 
 // Data
 import largestWalletsData from "layouts/tables/data/largestWalletsData";
@@ -39,14 +40,15 @@ import seasonWalletGradientChartData from "layouts/tables/chartdata/seasonWallet
 import walletDistributionGradientLineChartData from "layouts/tables/chartdata/walletDistributionGradientLineChartData";
 
 import walletTimeData from "layouts/tables/walletTimeData/walletTimeData";
-import hodlWalletsData from "layouts/tables/hodlWalletsData/hodlWalletsData";
+// import hodlWalletsData from "layouts/tables/hodlWalletsData/hodlWalletsData";
 
 // Soft UI Dashboard React base styles
 import typography from "assets/theme/base/typography";
 
 function Tables() {
   const { columns, rows } = largestWalletsData;
-  const { columns: prCols, rows: prRows } = hodlWalletsData;
+  // const { columns: prCols, rows: prRows } = hodlWalletsData;
+  const { chart, items } = seasonWalletGradientChartData;
 
   // const { chart, items } = reportsBarChartData;
   const { size } = typography;
@@ -56,7 +58,7 @@ function Tables() {
       <DashboardNavbar />
       <SuiBox py={3}>
         <Grid container spacing={3}>
-          <Grid item xs={12} lg={6}>
+          <Grid item xs={12} lg={7}>
             <GradientLineChart
               title="Wallet Distribution"
               description={
@@ -72,28 +74,20 @@ function Tables() {
                   </SuiTypography>
                 </SuiBox>
               }
-              height="18rem"
+              height="20rem"
               chart={walletDistributionGradientLineChartData}
             />
           </Grid>
-          <Grid item xs={12} lg={6}>
-            <GradientLineChart
-              title="Season Wallets"
+          <Grid item xs={12} lg={5}>
+            <ReportsBarChart
+              title="Wallets"
               description={
-                <SuiBox display="flex" alignItems="center">
-                  <SuiBox fontSize={size.lg} color="success" mb={0.3} mr={0.5} lineHeight={0}>
-                    <Icon className="font-bold">arrow_upward</Icon>
-                  </SuiBox>
-                  <SuiTypography variant="button" color="text" fontWeight="medium">
-                    Average 208395 Wallets{" "}
-                    <SuiTypography variant="button" color="text" fontWeight="regular">
-                      in every Season
-                    </SuiTypography>
-                  </SuiTypography>
-                </SuiBox>
+                <>
+                  (<strong>+8.2% Wallets</strong>) than last Season
+                </>
               }
-              height="18rem"
-              chart={seasonWalletGradientChartData}
+              chart={chart}
+              items={items}
             />
           </Grid>
         </Grid>
@@ -114,11 +108,11 @@ function Tables() {
                 },
               }}
             >
-              <Table columns={columns} rows={rows} />
+              <LaragestWalletTable columns={columns} rows={rows} />
             </SuiBox>
           </Card>
         </SuiBox>
-        <SuiBox mb={3}>
+        {/* <SuiBox mb={3}>
           <Card>
             <SuiBox display="flex" justifyContent="space-between" alignItems="center" p={3}>
               <SuiTypography variant="h6">Largest Wallets : Season 2</SuiTypography>
@@ -193,18 +187,18 @@ function Tables() {
               <Table columns={columns} rows={rows} />
             </SuiBox>
           </Card>
-        </SuiBox>
-        <SuiBox mb={3}>
+        </SuiBox> */}
+        <SuiBox mb={6}>
           <Grid item xs={12} lg={12}>
             <GradientLineChart
-              title="Wallets Against Time"
+              title="Wallets Against Time in Season1"
               description={
                 <SuiBox display="flex" alignItems="center">
                   <SuiBox fontSize={size.lg} color="primary" mb={0.3} mr={0.5} lineHeight={0}>
                     <Icon className="font-bold">arrow_upward</Icon>
                   </SuiBox>
                   <SuiTypography variant="button" color="text" fontWeight="medium">
-                    Wallets Against Time{" "}
+                    Wallets Against Time in Season1{" "}
                   </SuiTypography>
                 </SuiBox>
               }
@@ -213,100 +207,62 @@ function Tables() {
             />
           </Grid>
         </SuiBox>
-        <SuiBox mb={3}>
-          <Card>
-            <SuiBox display="flex" justifyContent="space-between" alignItems="center" p={3}>
-              <SuiTypography variant="h6">HODL Wallets - Season 1</SuiTypography>
-            </SuiBox>
-            <SuiBox
-              sx={{
-                "& .MuiTableRow-root:not(:last-child)": {
-                  "& td": {
-                    borderBottom: ({ borders: { borderWidth, borderColor } }) =>
-                      `${borderWidth[1]} solid ${borderColor}`,
-                  },
-                },
-              }}
-            >
-              <Table columns={prCols} rows={prRows} />
-            </SuiBox>
-          </Card>
+        <SuiBox mb={6}>
+          <Grid item xs={12} lg={12}>
+            <GradientLineChart
+              title="Wallets Against Time in Season2"
+              description={
+                <SuiBox display="flex" alignItems="center">
+                  <SuiBox fontSize={size.lg} color="primary" mb={0.3} mr={0.5} lineHeight={0}>
+                    <Icon className="font-bold">arrow_upward</Icon>
+                  </SuiBox>
+                  <SuiTypography variant="button" color="text" fontWeight="medium">
+                    Wallets Against Time in Season2{" "}
+                  </SuiTypography>
+                </SuiBox>
+              }
+              height="15rem"
+              chart={walletTimeData}
+            />
+          </Grid>
         </SuiBox>
-        <SuiBox mb={3}>
-          <Card>
-            <SuiBox display="flex" justifyContent="space-between" alignItems="center" p={3}>
-              <SuiTypography variant="h6">HODL Wallets - Season 2</SuiTypography>
-            </SuiBox>
-            <SuiBox
-              sx={{
-                "& .MuiTableRow-root:not(:last-child)": {
-                  "& td": {
-                    borderBottom: ({ borders: { borderWidth, borderColor } }) =>
-                      `${borderWidth[1]} solid ${borderColor}`,
-                  },
-                },
-              }}
-            >
-              <Table columns={prCols} rows={prRows} />
-            </SuiBox>
-          </Card>
+        <SuiBox mb={6}>
+          <Grid item xs={12} lg={12}>
+            <GradientLineChart
+              title="Wallets Against Time in Season3"
+              description={
+                <SuiBox display="flex" alignItems="center">
+                  <SuiBox fontSize={size.lg} color="primary" mb={0.3} mr={0.5} lineHeight={0}>
+                    <Icon className="font-bold">arrow_upward</Icon>
+                  </SuiBox>
+                  <SuiTypography variant="button" color="text" fontWeight="medium">
+                    Wallets Against Time in Season3{" "}
+                  </SuiTypography>
+                </SuiBox>
+              }
+              height="15rem"
+              chart={walletTimeData}
+            />
+          </Grid>
         </SuiBox>
-        <SuiBox mb={3}>
-          <Card>
-            <SuiBox display="flex" justifyContent="space-between" alignItems="center" p={3}>
-              <SuiTypography variant="h6">HODL Wallets - Season 3</SuiTypography>
-            </SuiBox>
-            <SuiBox
-              sx={{
-                "& .MuiTableRow-root:not(:last-child)": {
-                  "& td": {
-                    borderBottom: ({ borders: { borderWidth, borderColor } }) =>
-                      `${borderWidth[1]} solid ${borderColor}`,
-                  },
-                },
-              }}
-            >
-              <Table columns={prCols} rows={prRows} />
-            </SuiBox>
-          </Card>
-        </SuiBox>
-        <SuiBox mb={3}>
-          <Card>
-            <SuiBox display="flex" justifyContent="space-between" alignItems="center" p={3}>
-              <SuiTypography variant="h6">HODL Wallets - Season 4</SuiTypography>
-            </SuiBox>
-            <SuiBox
-              sx={{
-                "& .MuiTableRow-root:not(:last-child)": {
-                  "& td": {
-                    borderBottom: ({ borders: { borderWidth, borderColor } }) =>
-                      `${borderWidth[1]} solid ${borderColor}`,
-                  },
-                },
-              }}
-            >
-              <Table columns={prCols} rows={prRows} />
-            </SuiBox>
-          </Card>
-        </SuiBox>
-        <SuiBox mb={3}>
-          <Card>
-            <SuiBox display="flex" justifyContent="space-between" alignItems="center" p={3}>
-              <SuiTypography variant="h6">HODL Wallets - Season 5</SuiTypography>
-            </SuiBox>
-            <SuiBox
-              sx={{
-                "& .MuiTableRow-root:not(:last-child)": {
-                  "& td": {
-                    borderBottom: ({ borders: { borderWidth, borderColor } }) =>
-                      `${borderWidth[1]} solid ${borderColor}`,
-                  },
-                },
-              }}
-            >
-              <Table columns={prCols} rows={prRows} />
-            </SuiBox>
-          </Card>
+        <SuiBox mb={6}>
+          <Grid item xs={12} lg={12}>
+            <GradientLineChart
+              title="Wallets Against over the all time"
+              description={
+                <SuiBox display="flex" alignItems="center">
+                  <SuiBox fontSize={size.lg} color="primary" mb={0.3} mr={0.5} lineHeight={0}>
+                    <Icon className="font-bold">arrow_upward</Icon>
+                  </SuiBox>
+                  <SuiTypography variant="button" color="text" fontWeight="medium">
+                    Wallets Against over the all time{" "}
+                  </SuiTypography>
+                </SuiBox>
+              }
+              height="15rem"
+              chart={walletTimeData}
+            />
+          </Grid>
         </SuiBox>
       </SuiBox>
       <Footer />
